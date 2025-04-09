@@ -341,3 +341,12 @@ h1 {
   animation: gradient 2.5s linear infinite;
   font-size: 20px;
 }
+
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+#header button {
+  background-color: #2965f1;
+}
