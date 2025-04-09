@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="text-white text-center p-3" id="header">
+      <h1 id="title">Hola, mi nombre es Tomas Montoya</h1>
+      <p>Bienvenido a mi portafolio personal</p>
+    </header>
+    <main>
+      <!-- IMAGEN -->
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="./img/fototomi.jpg"
+              alt=""
+              id="fototomi"
+              class="img-fluid"
+            />
+          </div>
+          <!-- FIN IMAGEN -->
+
+          <!-- CONTACTO -->
+          <div class="col-md-6 d-">
+            <h1>Contacto</h1>
+            <ul class="d-flex flex-column">
+              <li id="gith">
+                <a href="https://github.com/TomiMontoyaDev" target="_blank"><img src="./img/github.svg" id="github" alt=""  /></a>TomiMontoyaDev 
+              </li>
+              <li id="mail"><a href="mailto:tomasmontoyabuitrago@gmail.com" target="_blank"><img src="./img/mail.svg" id="correo" alt="" ></a>tomasmontoyabuitrago@gmail.com <button id="copiar" onclick="copiarCorreo()">Copy!</button></li>
+              <li id="hojavida"><a href="./Hoja de vida Tomas.pdf" target="_blank"><img src="./img/cv.svg" id="cv" alt="" /></a>Ver CV <button id ="descargar" onclick="descargarCV()">Descargar</button></li>
+              </ul>
+              <!-- FIN CONTACTO -->
+
+              <!-- SOBRE MI -->
+            <h1>Sobre mí</h1>
+            <p id="sobremi">
+              Soy un desarrollador web apasionado por la tecnología y el
+              aprendizaje continuo. Me encanta crear sitios web interactivos y
+              funcionales.
+            </p>
+            <!-- FIN SOBRE MI -->
+
+            <!-- HARDSKILLS -->
+            <h1>Habilidades Tecnicas</h1>
+            <ul>
+              <li id="html">HTML <img src="./img/html.svg" width="40px" alt="" /></li>
+              <li id="css">CSS <img src="./img/css.svg" width="40px" alt="" /></li>
+              <li id="js">JavaScript <img src="./img/js.svg" width="40px" alt="" /></li>
+              <li id="bootstrap">
+                Bootstrap <img src="./img/bootstrap.svg" width="40px" alt="" />
+              </li>
+            </ul>
+            <!-- FIN HARDSKILLS -->
+          </div>
+          <div class="col-md-6">
+            <!-- SOFTSKILLS -->
+            <h1>Habilidades Blandas</h1>
+            <ul id="softskills">
+              <li>Comunicación efectiva</li>
+              <li>Adaptabilidad</li>
+              <li>Creatividad</li>
+              <li>Gestión del tiempo</li>
+              <li>Trabajo en equipo y colaboración</li>
+            </ul>
+            <!-- FIN SOFTSKILLS -->
+
+            <!-- APRENDIENDO -->
+            <h1>Aprendiendo</h1>
+            <ul>
+              <li id="cpp">C++ <img src="./img/cpp.svg" width="40px" alt="" /></li>
+              <li id="c">C <img src="./img/c.svg" width="40px" alt="" /></li>
+              <li id="nodejs">
+                Node JS <img src="./img/nodejs.svg" width="40px" alt="" />
+              </li>
+              <li id="react">React <img src="./img/react.svg" width="40px" alt="" /></li>
+              <li id="php">Php <img src="./img/php.svg" width="40px" alt="" /></li>
+            </ul>
+            <!-- FIN APRENDIENDO -->
+          </div>
+        </div>
+      </div>
+      <!-- PROYECTOS -->
+      <div class="container mt-5 mb-5" id="proyectos">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>Proyectos</h1>
+            <ul>
+              <li>Proyecto 1</li>
+              <li>Proyecto 2</li>
+              <li>Proyecto 3</li>
+            </ul>
+          </div>
+          <!-- FIN PROYECTOS -->
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function copiarCorreo() {
+        const correo = "tomasmontoyabuitrago@gmail.com";
+        navigator.clipboard.writeText(correo);
+        document.getElementById("copiar").innerText = "¡Copiado!";
+        setTimeout(() => {
+          document.getElementById("copiar").innerText = "Copy!";
+        }, 2000);
+      }
+
+      function descargarCV() {
+        const link = document.createElement("a");
+        link.href = "./Hoja de vida Tomas.pdf";
+        link.download = "Hoja de vida Tomas.pdf";
+        link.click();
+      }
+
+    </script>
+  </body>
+</html>
