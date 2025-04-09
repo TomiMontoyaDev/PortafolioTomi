@@ -15,57 +15,18 @@
   <body>
     <header class="text-white text-center p-3" id="header">
       <h1 id="title">Hola, mi nombre es Tomas Montoya</h1>
-      <p>Bienvenido a mi portafolio personal</p>
+      <p id="subtitle">Bienvenido a mi portafolio personal</p>
     </header>
     <main>
       <!-- IMAGEN -->
       <div class="container mt-5">
         <div class="row">
+          <!-- COLUMNA IZQUIERDA: Imagen, Softskills y Aprendiendo -->
           <div class="col-md-6">
-            <img
-              src="./img/fototomi.jpg"
-              alt=""
-              id="fototomi"
-              class="img-fluid"
-            />
-          </div>
-          <!-- FIN IMAGEN -->
-
-          <!-- CONTACTO -->
-          <div class="col-md-6 d-">
-            <h1>Contacto</h1>
-            <ul class="d-flex flex-column">
-              <li id="gith">
-                <a href="https://github.com/TomiMontoyaDev" target="_blank"><img src="./img/github.svg" id="github" alt=""  /></a>TomiMontoyaDev 
-              </li>
-              <li id="mail"><a href="mailto:tomasmontoyabuitrago@gmail.com" target="_blank"><img src="./img/mail.svg" id="correo" alt="" ></a>tomasmontoyabuitrago@gmail.com <button id="copiar" onclick="copiarCorreo()">Copy!</button></li>
-              <li id="hojavida"><a href="./Hoja de vida Tomas.pdf" target="_blank"><img src="./img/cv.svg" id="cv" alt="" /></a>Ver CV <button id ="descargar" onclick="descargarCV()">Descargar</button></li>
-              </ul>
-              <!-- FIN CONTACTO -->
-
-              <!-- SOBRE MI -->
-            <h1>Sobre mí</h1>
-            <p id="sobremi">
-              Soy un desarrollador web apasionado por la tecnología y el
-              aprendizaje continuo. Me encanta crear sitios web interactivos y
-              funcionales.
-            </p>
-            <!-- FIN SOBRE MI -->
-
-            <!-- HARDSKILLS -->
-            <h1>Habilidades Tecnicas</h1>
-            <ul>
-              <li id="html">HTML <img src="./img/html.svg" width="40px" alt="" /></li>
-              <li id="css">CSS <img src="./img/css.svg" width="40px" alt="" /></li>
-              <li id="js">JavaScript <img src="./img/js.svg" width="40px" alt="" /></li>
-              <li id="bootstrap">
-                Bootstrap <img src="./img/bootstrap.svg" width="40px" alt="" />
-              </li>
-            </ul>
-            <!-- FIN HARDSKILLS -->
-          </div>
-          <div class="col-md-6">
-            <!-- SOFTSKILLS -->
+            <!-- Imagen -->
+            <img src="./img/fototomi.jpg" alt="Foto Tomi" id="fototomi" class="img-fluid mb-4" />
+    
+            <!-- Habilidades Blandas -->
             <h1>Habilidades Blandas</h1>
             <ul id="softskills">
               <li>Comunicación efectiva</li>
@@ -74,35 +35,129 @@
               <li>Gestión del tiempo</li>
               <li>Trabajo en equipo y colaboración</li>
             </ul>
-            <!-- FIN SOFTSKILLS -->
-
-            <!-- APRENDIENDO -->
+    
+            <!-- Aprendiendo -->
             <h1>Aprendiendo</h1>
             <ul>
               <li id="cpp">C++ <img src="./img/cpp.svg" width="40px" alt="" /></li>
               <li id="c">C <img src="./img/c.svg" width="40px" alt="" /></li>
-              <li id="nodejs">
-                Node JS <img src="./img/nodejs.svg" width="40px" alt="" />
-              </li>
+              <li id="nodejs">Node JS <img src="./img/nodejs.svg" width="40px" alt="" /></li>
               <li id="react">React <img src="./img/react.svg" width="40px" alt="" /></li>
-              <li id="php">Php <img src="./img/php.svg" width="40px" alt="" /></li>
+              <li id="php">PHP <img src="./img/php.svg" width="40px" alt="" /></li>
             </ul>
-            <!-- FIN APRENDIENDO -->
+          </div>
+    
+          <!-- COLUMNA DERECHA: Contenido general -->
+          <div class="col-md-6">
+            <!-- Contacto -->
+            <h1>Contacto</h1>
+            <ul class="d-flex flex-column">
+              <li class="bold">
+                <a href="https://github.com/TomiMontoyaDev" target="_blank">
+                  <img src="./img/github.svg" id="github" alt="" />
+                </a>
+                TomiMontoyaDev
+              </li>
+              <li class="bold">
+                <a href="mailto:tomasmontoyabuitrago@gmail.com" target="_blank">
+                  <img src="./img/mail.svg" id="correo" alt="" />
+                </a>
+                tomasmontoyabuitrago@gmail.com
+                <button id="copiar" onclick="copiarCorreo()">Copy!</button>
+              </li>
+              <li class="bold">
+                <a href="./Hoja de vida Tomas.pdf" target="_blank">
+                  <img src="./img/cv.svg" id="cv" alt="" />
+                </a>
+                Ver CV
+                <button id="descargar" onclick="descargarCV()">Descargar</button>
+              </li>
+            </ul>
+    
+            <!-- Sobre mí -->
+            <h1>Sobre mí</h1>
+            <p class="bold fs-5">
+              Soy un desarrollador web apasionado por la tecnología y el aprendizaje continuo. Me encanta crear sitios web interactivos y funcionales con creatividad. Algunos de mis hobbies son el skateboarding y jugar videojuegos. Estoy en busca de nuevas oportunidades para seguir creciendo a nivel personal y profesional en el mundo del desarrollo web.
+            </p>
+    
+            <!-- Habilidades Técnicas -->
+            <h1>Habilidades Técnicas</h1>
+            <ul>
+              <li id="html">HTML <img src="./img/html.svg" width="40px" alt="" /></li>
+              <li id="css">CSS <img src="./img/css.svg" width="40px" alt="" /></li>
+              <li id="js">JavaScript <img src="./img/js.svg" width="40px" alt="" /></li>
+              <li id="bootstrap">Bootstrap <img src="./img/bootstrap.svg" width="40px" alt="" /></li>
+            </ul>
+    
+            <!-- Formación e Idiomas -->
+            <h1>Formación e Idiomas</h1>
+            <ul class="lista">
+              <li class="bold">Bachiller Técnico en Diseño y Desarrollo Web - Instituto Técnico Superior de Pereira</li>
+              <li class="bold">Inglés Nivel B1 - Universidad Tecnológica de Pereira</li>
+              <li class="bold">Actualmente cursando Tecnología en Desarrollo de Software - UTP</li>
+              <li class="bold">Curso Desarrollo Front End - AprendemosWEB</li>
+            </ul>
+    
+            <!-- Experiencia Laboral -->
+            <h1>Experiencia Laboral</h1>
+            <ul class="lista">
+              <li class="bold">Jefe de Bodega y Despachos - Occidente Papelería y más</li>
+              <li class="bold">Asesor Comercial - Occidente Papelería y más</li>
+              <li class="bold">Desarrollo de apps en PowerApps - Independiente</li>
+              <li class="bold">Desarrollo Web - Independiente</li>
+              <li class="bold">Diseño Digital - Independiente</li>
+            </ul>
           </div>
         </div>
       </div>
       <!-- PROYECTOS -->
       <div class="container mt-5 mb-5" id="proyectos">
         <div class="row">
-          <div class="col-md-6">
+          <div class="text-center">
             <h1>Proyectos</h1>
+            <!-- PROYECTO 1 -->
             <ul>
-              <li>Proyecto 1</li>
-              <li>Proyecto 2</li>
-              <li>Proyecto 3</li>
+              <li class="titulop">Pasolimo Car Service Website</li>
+              <img src="./img/pasolimo.png" alt="" id="pasolimoimg" class="img-fluid" />
+              <div class="col-md-12 mb-5">
+                <a id="repositorio" href="https://github.com/TomiMontoyaDev/Pasolimo" target="_blank" class="btn btn-primary mt-3">Ver Repositorio</a>
+                <a id="demo" href="https://paso-limo.com/" target="_blank" class="btn btn-success mt-3">Ver Demo</a>
+              </div>
             </ul>
+            <!-- FIN PROYECTO 1 -->
+             <!-- PROYECTO 2 -->
+          <ul>
+            <li class="titulop">Exotic Car Pereira Website</li>
+            <img src="./img/exotic.png" alt="" id="pasolimoimg" class="img-fluid" />
+            <div class="col-md-12 mb-5">
+              <a id="repositorio" href="https://github.com/TomiMontoyaDev/Exotic-Cars-Pereira" target="_blank" class="btn btn-primary mt-3">Ver Repositorio</a>
+              <a id="demo" href="https://tomimontoyadev.github.io/Exotic-Cars-Pereira/carros.html" target="_blank" class="btn btn-success mt-3">Ver Demo</a>
+            </div>
+          </ul>
+          <!-- FIN PROYECTO 2 -->
+          <!-- PROYECTO 3 -->
+          <ul>
+            <li class="titulop">Pacman C++</li>
+            <img src="./img/pacman.png" alt="" id="pasolimoimg" class="img-fluid" />
+            <div class="col-md-12 mb-5">
+              <a id="repositorio" href="https://github.com/TomiMontoyaDev/Pacman-C-" target="_blank" class="btn btn-primary mt-3">Ver Repositorio</a>
+              <a id="demo" onclick="abrirPacman()" class="btn btn-success mt-3">Ver Demo</a>
+            </div>
+          </ul>
+          <!-- FIN PROYECTO 3 -->
           </div>
           <!-- FIN PROYECTOS -->
+
+           <!-- FOOTER -->
+        </div>
+        <div class="row" id="footer">
+          <div class="col-md-12">
+            <p class="text-center">© 2025 Tomi Montoya</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- FIN FOOTER -->
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
@@ -124,6 +179,10 @@
         link.href = "./Hoja de vida Tomas.pdf";
         link.download = "Hoja de vida Tomas.pdf";
         link.click();
+      }
+
+      function abrirPacman() {
+        window.open("./pacmanmapa1.exe", "_blank");
       }
 
     </script>
