@@ -23,7 +23,7 @@
       <div class="container mt-5">
         <div class="row">
           <!-- COLUMNA IZQUIERDA: Imagen, Softskills y Aprendiendo -->
-          <div class="col-md-6">
+          <div class="col-md-6 order-2 order-md-1">
             <!-- Imagen -->
             <img src="./img/fototomi.jpg" alt="Foto Tomi" id="fototomi" class="img-fluid mb-4" />
     
@@ -49,7 +49,7 @@
           </div>
     
           <!-- COLUMNA DERECHA: Contenido general -->
-          <div class="col-md-6">
+          <div class="col-md-6 order-1 order-md-2">
             <!-- Contacto -->
             <h1>Contacto</h1>
             <ul class="d-flex flex-column" id="contacto">
@@ -63,8 +63,8 @@
                 <a href="mailto:tomasmontoyabuitrago@gmail.com" target="_blank">
                   <img src="./img/mail.svg" id="correo" alt="" />
                 </a>
-                tomasmontoyabuitrago@gmail.com
-                <button id="copiar" onclick="copiarCorreo()">Copiar</button>
+                <button id="copiar" data-tooltip="Copiar" onclick="copiarCorreo()">tomasmontoyabuitrago@gmail.com</button>
+                <div id="tooltip" class="tooltip"></div>
               </li>
               <li class="bold">
                 <a href="./Hoja de vida Tomas.pdf" target="_blank">
@@ -186,6 +186,25 @@
         window.open("./pacmanmapa1.exe", "_blank");
       }
 
+      const boton = document.getElementById("copiar");
+  const tooltip = document.getElementById("tooltip");
+
+  boton.addEventListener("mouseover", (e) => {
+    const mensaje = boton.getAttribute("data-tooltip");
+    tooltip.textContent = mensaje;
+    tooltip.style.left = e.pageX + "px";
+    tooltip.style.top = (e.pageY - 40) + "px";
+    tooltip.style.opacity = 1;
+  });
+
+  boton.addEventListener("mousemove", (e) => {
+    tooltip.style.left = e.pageX + "px";
+    tooltip.style.top = (e.pageY - 40) + "px";
+  });
+
+  boton.addEventListener("mouseout", () => {
+    tooltip.style.opacity = 0;
+  });
     </script>
   </body>
 </html>
