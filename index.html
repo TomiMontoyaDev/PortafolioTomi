@@ -55,20 +55,20 @@
             <ul class="d-flex flex-column" id="contacto">
               <li class="bold">
                 <a href="https://github.com/TomiMontoyaDev" target="_blank">
-                  <img src="./img/github.svg" id="github" alt="" />
+                  <img src="./img/github.svg" class="img-fluid icono-contacto" id="github" alt="" />
                 </a>
                 TomiMontoyaDev
               </li>
               <li class="bold">
                 <a href="mailto:tomasmontoyabuitrago@gmail.com" target="_blank">
-                  <img src="./img/mail.svg" id="correo" alt="" />
+                  <img src="./img/mail.svg" class="img-fluid icono-contacto" id="correo" alt="" />
                 </a>
                 <button id="copiar" data-tooltip="Copiar" onclick="copiarCorreo()">tomasmontoyabuitrago@gmail.com</button>
                 <div id="tooltip" class="tooltip"></div>
               </li>
               <li class="bold">
                 <a href="./Hoja de vida Tomas.pdf" target="_blank">
-                  <img src="./img/cv.svg" id="cv" alt="" />
+                  <img src="./img/cv.svg" class="img-fluid icono-contacto" id="cv" alt="" />
                 </a>
                 Ver CV
                 <button id="descargar" onclick="descargarCV()">Descargar</button>
@@ -171,7 +171,7 @@
         navigator.clipboard.writeText(correo);
         document.getElementById("copiar").innerText = "¡Copiado!";
         setTimeout(() => {
-          document.getElementById("copiar").innerText = "Copiar";
+          document.getElementById("copiar").innerText = "tomasmontoyabuitrago@gmail.com";
         }, 2000);
       }
 

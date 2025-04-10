@@ -368,3 +368,8 @@ a {
   opacity: 0;
   transition: opacity 0.2s;
 }
+
+.icono-contacto {
+  max-width: 40px;
+  height: auto;
+}
