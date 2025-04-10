@@ -23,7 +23,7 @@
       <div class="container mt-5">
         <div class="row">
           <!-- COLUMNA IZQUIERDA: Imagen, Softskills y Aprendiendo -->
-          <div class="col-md-6 order-2 order-md-1">
+          <div class="col-md-6">
             <!-- Imagen -->
             <img src="./img/fototomi.jpg" alt="Foto Tomi" id="fototomi" class="img-fluid mb-4" />
     
@@ -49,26 +49,26 @@
           </div>
     
           <!-- COLUMNA DERECHA: Contenido general -->
-          <div class="col-md-6 order-1 order-md-2">
+          <div class="col-md-6">
             <!-- Contacto -->
             <h1>Contact</h1>
             <ul class="d-flex flex-column" id="contacto">
               <li class="bold">
                 <a href="https://github.com/TomiMontoyaDev" target="_blank">
-                  <img src="./img/github.svg" id="github" alt="" />
+                  <img src="./img/github.svg" class="img-fluid icono-contacto"  id="github" alt="" />
                 </a>
                 TomiMontoyaDev
               </li>
               <li class="bold">
                 <a href="mailto:tomasmontoyabuitrago@gmail.com" target="_blank">
-                  <img src="./img/mail.svg" id="correo" alt="" />
+                  <img src="./img/mail.svg" class="img-fluid icono-contacto"  id="correo" alt="" />
                 </a>
-                <button id="copiar" data-tooltip="Copy" onclick="copiarCorreo()">tomasmontoyabuitrago@gmail.com</button>
+                <a id="copiar" data-tooltip="Copy" onclick="copiarCorreo()">tomasmontoyabuitrago@gmail.com</a>
                 <div id="tooltip" class="tooltip"></div>
               </li>
               <li class="bold">
                 <a href="./Hoja de vida Tomas.pdf" target="_blank">
-                  <img src="./img/cv.svg" id="cv" alt="" />
+                  <img src="./img/cv.svg" class="img-fluid icono-contacto"  id="cv" alt="" />
                 </a>
                 See Resume
                 <button id="descargar" onclick="descargarCV()">Download</button>

@@ -370,6 +370,22 @@ a {
 }
 
 .icono-contacto {
-  max-width: 40px;
+  max-width: 100px;
   height: auto;
+  margin-right: 5px;
+  vertical-align: middle;
+  transition: transform 0.3s ease-in-out;
+  filter: invert(1);
+}
+
+@media (max-width: 768px) {
+  .icono-contacto {
+    max-width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .icono-contacto {
+    max-width: 60px;
+  }
 }
