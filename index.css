@@ -382,10 +382,18 @@ a {
   .icono-contacto {
     max-width: 80px;
   }
+
+  #copiar {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 480px) {
   .icono-contacto {
     max-width: 60px;
+  }
+
+  #copiar {
+    font-size: 10px;
   }
 }
